@@ -1,9 +1,13 @@
-const App = () => {
+import { ThemeProvider } from '@mui/material/styles';
+import Calculator from './components/Calculator';
+import theme from './theme';
+
+function App() {
   return (
-    <>
-      <h1>hello world</h1>
-    </>
+    <ThemeProvider theme={theme}>
+      <Calculator />
+    </ThemeProvider>
   );
-};
+}
 
 export default App;
