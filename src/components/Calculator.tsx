@@ -6,14 +6,21 @@ const Calculator: React.FC = () => {
   const [displayValue, setDisplayValue] = useState('');
 
   return (
-    <Grid container spacing={1}>
+    <Grid container spacing={2}>
       <Grid>
         <Paper>
           <Display value={displayValue} />
         </Paper>
-      </Grid>
-      <Grid>
-        <Button onClick={() => setDisplayValue('1')}>1</Button>
+
+        <Grid>
+          <Button onClick={() => setDisplayValue('1')}>1</Button>
+        </Grid>
+        <Grid>
+          <Button onClick={() => setDisplayValue('2')}>2</Button>
+        </Grid>
+        <Grid>
+          <Button onClick={() => setDisplayValue('3')}>3</Button>
+        </Grid>
       </Grid>
     </Grid>
   );
