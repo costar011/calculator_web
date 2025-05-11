@@ -12,7 +12,7 @@ const Display: React.FC<DisplayProps> = ({ value }) => {
       fullWidth
       InputProps={{
         readOnly: true,
-        sx: { textAlign: 'right' }, // 텍스트 오른쪽 정렬
+        sx: { textAlign: 'right' },
       }}
       sx={{
         mb: 2,
